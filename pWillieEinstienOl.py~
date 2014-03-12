@@ -1,0 +1,10 @@
+from pWillieOL import Oompaloompa
+class einstienOl (Oompaloompa):
+	def __init__(self,price,image,height,gender,einlvl):
+		super(einstienOl,self).__init__(price,image,height,gender)
+		self.einlvl = einlvl
+if __name__ == "__main__":
+	omar = einstienOl(12,12,12,"male","Maor")
+	print omar.einlvl
+
+

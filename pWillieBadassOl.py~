@@ -1,0 +1,10 @@
+from pWillieOL import Oompaloompa
+class badassOl (Oompaloompa):
+	def __init__(self,price,image,height,gender,badasslvl):
+		super(badassOl,self).__init__(price,image,height,gender)
+		self.badasslvl = badasslvl
+if __name__ == "__main__":
+	omar = badassOl(12,12,12,"male","OVER 9000!!!!!!!")
+	print omar.badasslvl
+
+
