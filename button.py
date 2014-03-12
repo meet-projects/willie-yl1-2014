@@ -17,11 +17,20 @@ class Button(View):
 		
 			#TODO 
 		#TODO set background to main screen background
-		labelText = self.thefont.render(self.text,1,self.textColor,self.color, )
+		labelText = self.thefont.render(self.text,1,self.textColor,self.color)
+		self.main_screen.blit(view_rec, self.rec)
 		self.main_screen.blit(labelText,self.rec)
 	def clear(self):
 		view_rec = pygame.Surface([int(self.rec.width),int(self.rec.height)])
 		view_rec.fill((255,255,255))
 		self.main_screen.blit(view_rec,self.rec)
 		self.isCleared = True
-
+	def checkIfPosIsInRec(self, x,y):
+		if x > self.rec.x and x < (self.rec.x + self.rec.width) and y > self.rec.y and y < (self.rec.y + self.rec.height):
+			return True
+		else:
+			return False
+	def updateText(self, text):
+		self.clear()
+		self.text = text
+		self.draw()
