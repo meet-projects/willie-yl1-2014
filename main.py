@@ -5,6 +5,17 @@ from pWillieShexyOl import ShexyOl
 from pWillieFatOL import fatOL
 from pWillieBadassOl import badassOl
 
+#For screen DELETIATION!!!!!
+
+def replaciationatorTron():
+	global refreshock
+	refreshock += 1
+	bananator = pygame.Rect(0,0,1000,1000)
+	bananatorsurface = pygame.Surface([1000,1000])
+	bananatorsurface.fill((255,255,255))
+	main_screen.blit(bananatorsurface, bananator )
+	someLabel = Button(pygame.Rect(20, 500, 500, 100), "YOU JUST GOT SCAMMED! Thanks for the money!!!!.", None ,(255,255,255),(35,222,59),None,50,main_screen)
+	someLabel.draw()
 def makeItSexy():
 	global shoppingCart
 	global price
@@ -37,13 +48,15 @@ if __name__=="__main__":
 	global shoppingCart
 	global number
 	global price
+	global refreshock
+	refreshock = 0
 	price = 0
 	number = 0
 	pygame.init()
 
 
 	infoObject = pygame.display.Info()
-	main_screen = pygame.display.set_mode((800, 800))
+	main_screen = pygame.display.set_mode((1000, 1000))
 	main_screen.fill((255,255,255))
 
 
@@ -86,6 +99,13 @@ if __name__=="__main__":
 
 	buttons.append(badassbutton)
 
+	#button for "done"
+	
+	donebutton = Button(pygame.Rect(600,750, 100, 100), "Done", replaciationatorTron ,(255,255,255),(35,222,59),None,50,main_screen)
+	donebutton.draw()
+
+	buttons.append(donebutton)
+
 
 	
 
@@ -93,11 +113,12 @@ if __name__=="__main__":
 		ev = pygame.event.poll()
 		if ev.type == pygame.QUIT: 
 			sys.exit()
-		if ev.type == pygame.MOUSEBUTTONDOWN:
-			x, y = ev.pos
-			for button in buttons:
-				if button.checkIfPosIsInRec(x,y):
-					button.action()
+		if refreshock == 0:
+			if ev.type == pygame.MOUSEBUTTONDOWN:
+				x, y = ev.pos
+				for button in buttons:
+					if button.checkIfPosIsInRec(x,y):
+						button.action()
 		if number <= 1:
 			counterLabel.updateText(str(number) + " Oompa Loompa- BUY MORE!")
 		else:
