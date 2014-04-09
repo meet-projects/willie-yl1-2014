@@ -31,7 +31,15 @@ def makeItBadass():
 	s = badassOl(1000,"",400,"shemale",9000)
 	price+=s.price
 	number+=1
-	
+def makeItMusical():
+
+	global shoppingCart
+	global price
+	global number
+
+	s = MusicalOl(400,"",400,"shemale",1000)
+	price+=s.price
+	number+=1
 
 if __name__=="__main__":
 	global shoppingCart
@@ -85,6 +93,12 @@ if __name__=="__main__":
 	badassbutton.draw()
 
 	buttons.append(badassbutton)
+
+	Musicallabel = Button(pygame.Rect(450,425, 150, 150), "Musical Oompa Loompa - $2000", None ,(255,255,255),(35,222,59),None,30,main_screen)
+	Musicallabel.draw()
+	
+	Musicalbutton = Button(pygame.Rect(450,475, 250, 200), "", makeItMusical ,(35,41,222),(35,222,59),None,50,main_screen)
+	Musicalbutton.draw()
 
 
 	
