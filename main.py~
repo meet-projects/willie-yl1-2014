@@ -78,7 +78,7 @@ if __name__=="__main__":
 	#buttons.append(b)
 
 	#badass button
-	badasslabel = Button(pygame.Rect(450,100, 150, 150), "Bada$$ Oompa Loompa - $1000", None ,(255,255,255),(35,222,59),None,30,main_screen)
+	badasslabel = Button(pygame.Rect(250,100, 150, 150), "Bada$$ Oompa Loompa - $1000", None ,(255,255,255),(35,222,59),None,30,main_screen)
 	badasslabel.draw()
 	
 	badassbutton = Button(pygame.Rect(450,150, 250, 200), "", makeItBadass ,(35,41,222),(35,222,59),None,50,main_screen)

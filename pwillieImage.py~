@@ -12,11 +12,11 @@ class Image (View):
 		img.fill((255,255,255))
 		main_screen.blit(img,self.rec)
 
-if __name__ == "__main__":
+'''if __name__ == "__main__":
 	main = pygame.display.set_mode((400,400))
 	main.fill((255,255,255))
 	c = Image([20,20],main,'download.jpg')
 	c.draw()
 	while (True):
 		ev = pygame.event.poll()
-		pygame.display.flip()	
+		pygame.display.flip()	'''
