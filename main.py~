@@ -4,6 +4,7 @@ from button import Button
 from pWillieShexyOl import ShexyOl
 from pWillieFatOL import fatOL
 from pWillieBadassOl import badassOl
+from pWillieMusicalOL import musicalOl
 
 #For screen DELETIATION!!!!!
 
@@ -14,7 +15,7 @@ def replaciationatorTron():
 	bananatorsurface = pygame.Surface([1000,1000])
 	bananatorsurface.fill((255,255,255))
 	main_screen.blit(bananatorsurface, bananator )
-	someLabel = Button(pygame.Rect(20, 500, 500, 100), "YOU JUST GOT SCAMMED! Thanks for the money dumbass!!!!.", None ,(255,255,255),(35,222,59),None,50,main_screen)
+	someLabel = Button(pygame.Rect(20, 500, 500, 100), "YOU JUST GOT SCAMMED! Thanks for the money!!!!.", None ,(255,255,255),(35,222,59),None,50,main_screen)
 	someLabel.draw()
 def makeItSexy():
 	global shoppingCart
@@ -42,7 +43,15 @@ def makeItBadass():
 	s = badassOl(1000,"",400,"shemale",9000)
 	price+=s.price
 	number+=1
-	
+def makeItMusical():
+
+	global shoppingCart
+	global price
+	global number
+
+	s = MusicalOl(2000,"",400,"shemale",1000)
+	price+=s.price
+	number+=1
 
 if __name__=="__main__":
 	global shoppingCart
@@ -98,6 +107,14 @@ if __name__=="__main__":
 	badassbutton.draw()
 
 	buttons.append(badassbutton)
+	#musical oompaloompa
+
+
+	Musicallabel = Button(pygame.Rect(450,425, 150, 150), "Musical Oompa Loompa - $2000", None ,(255,255,255),(35,222,59),None,30,main_screen)
+	Musicallabel.draw()
+	
+	Musicalbutton = Button(pygame.Rect(450,475, 250, 200), "", makeItMusical ,(35,41,222),(35,222,59),None,50,main_screen)
+	Musicalbutton.draw()
 
 	#button for "done"
 	

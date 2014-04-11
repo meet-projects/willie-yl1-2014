@@ -4,6 +4,7 @@ from button import Button
 from pWillieShexyOl import ShexyOl
 from pWillieFatOL import fatOL
 from pWillieBadassOl import badassOl
+from pWillieMusicalOL import musicalOl
 
 #For screen DELETIATION!!!!!
 
@@ -48,7 +49,7 @@ def makeItMusical():
 	global price
 	global number
 
-	s = MusicalOl(400,"",400,"shemale",1000)
+	s = MusicalOl(2000,"",400,"shemale",1000)
 	price+=s.price
 	number+=1
 
@@ -106,6 +107,7 @@ if __name__=="__main__":
 	badassbutton.draw()
 
 	buttons.append(badassbutton)
+	#musical oompaloompa
 
 	Musicallabel = Button(pygame.Rect(450,425, 150, 150), "Musical Oompa Loompa - $2000", None ,(255,255,255),(35,222,59),None,30,main_screen)
 	Musicallabel.draw()
