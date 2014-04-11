@@ -63,7 +63,9 @@ def makeItMusical():
 	global price
 	global number
 
-	s = musicalOl(2000,"",400,"shemale",1000)
+
+	s = musicalOl(400,"",400,"shemale",1000)
+
 	price+=s.price
 	number+=1
 
@@ -137,6 +139,7 @@ if __name__=="__main__":
 			
 		donebutton = Button(pygame.Rect(600,750, 100, 100), "Done", replaciationatorTron ,(255,255,255),(35,222,59),None,50,main_screen)
 		donebutton.draw()
+
 
 		buttons.append(donebutton)
 
