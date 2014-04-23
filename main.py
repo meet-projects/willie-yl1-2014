@@ -97,7 +97,7 @@ if __name__=="__main__":
 		smartlabel = Button(pygame.Rect(50,100, 150, 150), "Einstien Oompa Loompa - $100.00", None ,(255,255,255),(35,222,59),None,30,main_screen)
 		smartlabel.draw()
 			
-		smartbutton = Button(pygame.Rect(50,150, 250, 200), "", makeItSmart ,(35,41,222),(35,222,59),None,50,main_screen)
+		smartbutton = Button(pygame.Rect(50,150, 250, 200), "", makeItSmart ,(35,41,222),(35,222,59),pygame.image.load('doc-snow-white.jpg'),50,main_screen)
 		smartbutton.draw()
 
 		buttons.append(smartbutton)
@@ -106,7 +106,7 @@ if __name__=="__main__":
 		d2 = Button(pygame.Rect(50,425, 150, 150), "Fat Oompa Loompa - $30.00", None ,(255,255,255),(35,222,59),None,30,main_screen)
 		d2.draw()
 			
-		b2 = Button(pygame.Rect(50,475, 250, 200), "", makeItFat ,(35,41,222),(35,222,59),None,50,main_screen)
+		b2 = Button(pygame.Rect(50,475, 250, 200), "", makeItFat ,(35,41,222),(35,222,59),pygame.image.load('Fatoompa.jpg'),50,main_screen)
 		b2.draw()
 		buttons.append(b2)
 
@@ -118,10 +118,10 @@ if __name__=="__main__":
 		#buttons.append(b)
 
 		#badass button
-		badasslabel = Button(pygame.Rect(450,100, 150, 150), "Bada$$ Oompa Loompa - $5000", None ,(255,255,255),(35,222,59),None,30,main_screen)
+		badasslabel = Button(pygame.Rect(450,100, 150, 150), "$uper Oompa Loompa - $5000", None ,(255,255,255),(35,222,59),None,30,main_screen)
 		badasslabel.draw()
 			
-		badassbutton = Button(pygame.Rect(450,150, 250, 200), "", makeItBadass ,(35,41,222),(35,222,59),None,50,main_screen)
+		badassbutton = Button(pygame.Rect(450,150, 250, 200), "", makeItBadass ,(35,41,222),(35,222,59),pygame.image.load('cooloompa.jpg'),50,main_screen)
 		badassbutton.draw()
 
 		buttons.append(badassbutton)
@@ -130,7 +130,7 @@ if __name__=="__main__":
 		Musicallabel = Button(pygame.Rect(450,425, 150, 150), "Musical Oompa Loompa - $2000", None ,(255,255,255),(35,222,59),None,30,main_screen)
 		Musicallabel.draw()
 			
-		Musicalbutton = Button(pygame.Rect(450,475, 250, 200), "", makeItMusical ,(35,41,222),(35,222,59),None,50,main_screen)
+		Musicalbutton = Button(pygame.Rect(450,475, 250, 200), "", makeItMusical ,(35,41,222),(35,222,59),pygame.image.load('musicoompa.jpg'),50,main_screen)
 		Musicalbutton.draw()
 
 		buttons.append(Musicalbutton)

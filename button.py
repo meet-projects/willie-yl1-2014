@@ -14,11 +14,13 @@ class Button(View):
 		view_rec = pygame.Surface([int(self.rec.width),int(self.rec.height)])
 		if self.image is None:
 			view_rec.fill(self.color)
-		
+			self.main_screen.blit(view_rec, self.rec)
+
+		else:
+			self.main_screen.blit(self.image, self.rec)
 			#TODO 
 		#TODO set background to main screen background
 		labelText = self.thefont.render(self.text,1,self.textColor)
-		self.main_screen.blit(view_rec, self.rec)
 		self.main_screen.blit(labelText,self.rec)
 	def clear(self):
 		view_rec = pygame.Surface([int(self.rec.width),int(self.rec.height)])
