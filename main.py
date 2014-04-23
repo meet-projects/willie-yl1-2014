@@ -97,7 +97,16 @@ if __name__=="__main__":
 	
 		#-
 
+<<<<<<< HEAD
 	
+=======
+		#Sexy button
+		smartlabel = Button(pygame.Rect(50,100, 150, 150), "Einstien Oompa Loompa - $100.00", None ,(255,255,255),(35,222,59),None,30,main_screen)
+		smartlabel.draw()
+			
+		smartbutton = Button(pygame.Rect(50,150, 250, 200), "", makeItSmart ,(35,41,222),(35,222,59),pygame.image.load('doc-snow-white.jpg'),50,main_screen)
+		smartbutton.draw()
+>>>>>>> efddcf15177081ad38a707f18390e0f1c1953d0e
 
 	while(True):
 		if refreshock == False:
@@ -122,12 +131,21 @@ if __name__=="__main__":
 			buttons.append(smartbutton)
 
 			#Fat oompa loompa 
+<<<<<<< HEAD
 			d2 = Button(pygame.Rect(50,425, 150, 150), "Fat Oompa Loompa - $30.00", None ,(255,255,255),(35,222,59),None,30,main_screen)
 			d2.draw()
 				
 			b2 = Button(pygame.Rect(50,475, 250, 200), "", makeItFat ,(35,41,222),(35,222,59),None,50,main_screen)
 			b2.draw()
 			buttons.append(b2)
+=======
+		d2 = Button(pygame.Rect(50,425, 150, 150), "Fat Oompa Loompa - $30.00", None ,(255,255,255),(35,222,59),None,30,main_screen)
+		d2.draw()
+			
+		b2 = Button(pygame.Rect(50,475, 250, 200), "", makeItFat ,(35,41,222),(35,222,59),pygame.image.load('Fatoompa.jpg'),50,main_screen)
+		b2.draw()
+		buttons.append(b2)
+>>>>>>> efddcf15177081ad38a707f18390e0f1c1953d0e
 
 			thingsBoughtLabel = Button(pygame.Rect(20, 700, 100, 100), "$0.00",None,(255,255,255),(35,222,59),None,50,main_screen)
 			thingsBoughtLabel.draw()
@@ -136,21 +154,38 @@ if __name__=="__main__":
 			counterLabel.draw()
 			#buttons.append(b)
 
+<<<<<<< HEAD
 			#badass button
 			badasslabel = Button(pygame.Rect(450,100, 150, 150), "Bada$$ Oompa Loompa - $5000", None ,(255,255,255),(35,222,59),None,30,main_screen)
 			badasslabel.draw()
 					
 			badassbutton = Button(pygame.Rect(450,150, 250, 200), "", makeItBadass ,(35,41,222),(35,222,59),None,50,main_screen)
 			badassbutton.draw()
+=======
+		#badass button
+		badasslabel = Button(pygame.Rect(450,100, 150, 150), "$uper Oompa Loompa - $5000", None ,(255,255,255),(35,222,59),None,30,main_screen)
+		badasslabel.draw()
+			
+		badassbutton = Button(pygame.Rect(450,150, 250, 200), "", makeItBadass ,(35,41,222),(35,222,59),pygame.image.load('cooloompa.jpg'),50,main_screen)
+		badassbutton.draw()
+>>>>>>> efddcf15177081ad38a707f18390e0f1c1953d0e
 
 			buttons.append(badassbutton)
 				#musical oompaloompa
 
+<<<<<<< HEAD
 			Musicallabel = Button(pygame.Rect(450,425, 150, 150), "Musical Oompa Loompa - $2000", None ,(255,255,255),(35,222,59),None,30,main_screen)
 			Musicallabel.draw()
 					
 			Musicalbutton = Button(pygame.Rect(450,475, 250, 200), "", makeItMusical ,(35,41,222),(35,222,59),None,50,main_screen)
 			Musicalbutton.draw()
+=======
+		Musicallabel = Button(pygame.Rect(450,425, 150, 150), "Musical Oompa Loompa - $2000", None ,(255,255,255),(35,222,59),None,30,main_screen)
+		Musicallabel.draw()
+			
+		Musicalbutton = Button(pygame.Rect(450,475, 250, 200), "", makeItMusical ,(35,41,222),(35,222,59),pygame.image.load('musicoompa.jpg'),50,main_screen)
+		Musicalbutton.draw()
+>>>>>>> efddcf15177081ad38a707f18390e0f1c1953d0e
 
 			buttons.append(Musicalbutton)
 
